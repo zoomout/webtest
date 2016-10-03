@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CBTSuite" parallel="tests" thread-count="2" >
+    <test name="Test1 android:ANDROID:Samsung Galaxy S5" parallel="classes" thread-count="1" >
+        <parameter name="driverType" value="mobile"/>
+        <parameter name="driverConfig" value="android:ANDROID:Samsung Galaxy S5"/>
+        <classes>
+            <class name="com.mycompany.webtest.CrossBrowserTest"/>
+        </classes>
+    </test>
+    <test name="Test2 iPhone:MAC:iPhone 6S Plus" parallel="classes" thread-count="1" >
+        <parameter name="driverType" value="mobile"/>
+        <parameter name="driverConfig" value="iPhone:MAC:iPhone 6S Plus"/>
+        <classes>
+            <class name="com.mycompany.webtest.CrossBrowserTest"/>
+        </classes>
+    </test>
+    <test name="Test3 IE:11.0:Windows:10:1920x1080" parallel="classes" thread-count="1" >
+        <parameter name="driverType" value="desktop"/>
+        <parameter name="driverConfig" value="IE:11.0:Windows:10:1920x1080"/>
+        <classes>
+            <class name="com.mycompany.webtest.CrossBrowserTest"/>
+        </classes>
+    </test>
+    <test name="Test4 Edge:13.0:Windows:10:1920x1080" parallel="classes" thread-count="1" >
+        <parameter name="driverType" value="desktop"/>
+        <parameter name="driverConfig" value="Edge:13.0:Windows:10:1920x1080"/>
+        <classes>
+            <class name="com.mycompany.webtest.CrossBrowserTest"/>
+        </classes>
+    </test>
+    <test name="Test5 Firefox:46.0:Windows:10:1920x1080" parallel="classes" thread-count="1" >
+        <parameter name="driverType" value="desktop"/>
+        <parameter name="driverConfig" value="Firefox:46.0:Windows:10:1920x1080"/>
+        <classes>
+            <class name="com.mycompany.webtest.CrossBrowserTest"/>
+        </classes>
+    </test>
+    <test name="Test6 Chrome:50.0:Windows:10:1920x1080" parallel="classes" thread-count="1" >
+        <parameter name="driverType" value="desktop"/>
+        <parameter name="driverConfig" value="Chrome:50.0:Windows:10:1920x1080"/>
+        <classes>
+            <class name="com.mycompany.webtest.CrossBrowserTest"/>
+        </classes>
+    </test>
+    <test name="Test7 Safari:9.1:OS X:El Capitan:1920x1080" parallel="classes" thread-count="1" >
+        <parameter name="driverType" value="desktop"/>
+        <parameter name="driverConfig" value="Safari:9.1:OS X:El Capitan:1920x1080"/>
+        <classes>
+            <class name="com.mycompany.webtest.CrossBrowserTest"/>
+        </classes>
+    </test>
+</suite>
