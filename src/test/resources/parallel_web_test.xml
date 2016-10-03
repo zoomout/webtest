@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+    <test name="FirstTest">
+        <parameter name="browser_api_name" value="IE10"/>
+        <parameter name="os_api_name" value="Win7x64-C2"/>
+        <parameter name="screen_resolution" value="1024x768"/>
+        <classes>
+            <class name="com.bogdan.project.TestCase"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="SecondTest">
+        <parameter name="browser_api_name" value="Safari9"/>
+        <parameter name="os_api_name" value="Mac10.11"/>
+        <parameter name="screen_resolution" value="1400x900"/>
+        <classes>
+            <class name="com.bogdan.project.TestCase"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="ThirdTest">
+        <parameter name="browser_api_name" value="MblSafari8.0"/>
+        <parameter name="os_api_name" value="iPhone6Plus-iOS8sim"/>
+        <parameter name="screen_resolution" value="1242x2208"/>
+        <classes>
+            <class name="com.bogdan.project.TestCase"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
